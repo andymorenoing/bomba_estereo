@@ -38,7 +38,7 @@
               alt: alt
             }}
           {%- else -%}
-            <img loading="lazy" src="../assets/video.jpg" width="auto" height="auto" alt="">
+            <img loading="lazy" width="auto" height="auto" src="{{ 'video.jpg' | asset_img_url: '300x'}}">
           {%- endif -%}
         </a>
       </div>
@@ -62,7 +62,7 @@
             alt: alt
           }}
         {%- else -%}
-          <img loading="lazy" src="../assets/video.jpg" width="auto" height="auto" alt="">
+          <img loading="lazy" width="auto" height="auto" src="{{ 'video.jpg' | asset_img_url: '300x'}}">
         {%- endif -%}
         <span class="deferred-media__poster-button motion-reduce">
           {%- render 'icon-play' -%}
@@ -83,7 +83,7 @@
       <h3 class="section_music_title">LATEST RELEASE</h3>
       <div class="section_music_play">
           <div class="section_music_play_img">
-              <img loading="lazy" src="../assets/music.jpg" width="auto" height="auto" alt="">
+              <img loading="lazy" width="auto" height="auto" src="{{ 'music.jpg' | asset_img_url: '300x'}}">
           </div>
           <div class="section_music_play_reproductor">
               <p class="play_reproductor_subtitle">FEATURING BAD BUNNY</p>
@@ -97,22 +97,22 @@
       <div class="section_instagram_items">
           <div class="section_instagram_item">
               <a href="">
-                <img loading="lazy" src="../assets/insta_1.jpg" width="auto" height="auto" alt="">
+                <img loading="lazy" width="auto" height="auto" src="{{ 'insta_1.jpg' | asset_img_url: '300x'}}">
               </a>
           </div>
           <div class="section_instagram_item">
               <a href="">
-                <img loading="lazy" src="../assets/insta_1.jpg" width="auto" height="auto" alt="">
+                <img loading="lazy" width="auto" height="auto" src="{{ 'insta_1.jpg' | asset_img_url: '300x'}}">
               </a>
           </div>
           <div class="section_instagram_item">
               <a href="">
-                <img loading="lazy" src="../assets/insta_1.jpg" width="auto" height="auto" alt="">
+                <img loading="lazy" width="auto" height="auto" src="{{ 'insta_1.jpg' | asset_img_url: '300x'}}">
               </a>
           </div>
           <div class="section_instagram_item">
               <a href="">
-                <img loading="lazy" src="../assets/insta_1.jpg" width="auto" height="auto" alt="">
+                <img loading="lazy" width="auto" height="auto" src="{{ 'insta_1.jpg' | asset_img_url: '300x'}}">
               </a>
           </div>
       </div>
