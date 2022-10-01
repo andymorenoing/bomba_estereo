@@ -3788,7 +3788,7 @@ img{
 .collection.page-width{
   padding: 0 20px;
 }
-.bombaestereo_content_product.grid_products_bombaestereo{
+.bombaestereo_content_product.grid_products_bombaestereo, .collection-hero{
   margin-bottom: 0;
   margin-top: 0;
   max-width: 1600px;
