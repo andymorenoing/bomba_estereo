@@ -3790,6 +3790,9 @@ img{
 }
 .bombaestereo_content_product.grid_products_bombaestereo{
   margin-bottom: 0;
+  margin-top: 0;
+  max-width: 1600px;
+  margin: auto;
 }
 .pagination .pagination__list{
   justify-content: flex-end;
