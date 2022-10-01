@@ -3815,3 +3815,77 @@ img{
   color: #fff;
   opacity: 1;
 }
+.main_producto_single{
+  padding: 0 10px;
+  max-width: 1600px;
+  margin: auto;
+}
+.main_producto_single .grid__item.product__media-wrapper, .main_producto_single .product__info-wrapper.grid__item{
+  width: 50% !important;
+  max-width: 50% !important;
+}
+.main_producto_single .product__info-wrapper.grid__item{
+  padding-left: 40px !important;
+}
+.main_producto_single .product__title h1{
+  font-size: 33px;
+  color: #884993;
+  font-family: 'athenian';
+  margin-top: 5px;
+}
+.main_producto_single .product__text{
+  font-family: 'helvetica-bold', sans-serif;
+  color: #884993;
+}
+.main_producto_single .price__sale span{
+  width: 100%;
+}
+.main_producto_single .product-form__input input[type='radio']:checked + label{
+  background: #884993;
+  border: #884993;
+}
+.main_producto_single .quantity{
+  min-height: 45px;
+  width: 170px;
+}
+.quantity__button{
+  width: 55px;
+}
+.quantity__input{
+  width: 60px;
+  max-width: 60px;
+}
+.product-form__buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-form__buttons > *{
+  width: 48%;
+  font-size: 15px;
+  border: 2px solid #884993;
+  padding: 20px;
+  margin: 0 !important;
+  color: #884993;
+}
+.shopify-payment-button{
+  background: #884993;
+}
+.product-form__buttons .shopify-payment-button__button{
+  background: none !important;
+  color: #fff !important;
+  padding: 0;
+  font-size: 15px;
+}
+.grid_products_bombaestereo .product-recommendations{
+  padding: 0;
+  background: #FCFCFC;
+}
+.grid_products_bombaestereo_recomendations{
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 50px;
+}
+.grid_products_bombaestereo_recomendations .section_products_title{
+  margin-bottom: 50px;
+}
