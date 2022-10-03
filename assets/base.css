@@ -4003,7 +4003,9 @@ img{
 .shopify-payment-button{
   border-radius: 6px;
 }
-
+.product__description ul{
+  list-style: disc;
+}
 
 
 
