@@ -3996,12 +3996,13 @@ img{
 }
 .button{
   background: #884993;
-  padding: 10px 20px;
   color: #fff;
   border-radius: 6px;
 }
 
-
+.shopify-payment-button{
+  border-radius: 6px;
+}
 
 
 
@@ -4097,7 +4098,5 @@ img{
     max-width: 100% !important;
     padding: 0 !important;
   }
-  .shopify-payment-button{
-    border-radius: 6px;
-  }
+ 
 }
