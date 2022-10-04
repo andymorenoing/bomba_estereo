@@ -1,3 +1,63 @@
+<div class="main_videos">
+    <div class="follow_yt">
+        <span>FOLLOW US ON YOTUBE</span>
+    </div>
+    <section class="main_videos_content"></section>
+</div>
+
+<div class="main_videos_modal"> 
+    <div class="main_videos_modal_content"> 
+        <div class="main_videos_modal_content_close" onclick="closeModalVideoYoutube()"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </div>
+        <div class="main_videos_modal_content_iframe">
+           
+        </div>
+    </div>
+</div>
+
+
 <script>
-    console.log('execute');
-<script>
+    //cerramos modal
+    function closeModalVideoYoutube(id_video){
+        let htmlIframe = ``;
+        const iframeElement = document.querySelector(".main_videos_modal_content_iframe");
+        iframeElement.innerHTML = htmlIframe;
+        document.querySelector(".main_videos_modal").style.display = "none";
+    }
+    //abrimos modal y creamos el iframe
+    function executeModalVideoYoutube(id_video){
+        let htmlIframe = `<iframe src="https://www.youtube.com/embed/${id_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        const iframeElement = document.querySelector(".main_videos_modal_content_iframe");
+        iframeElement.innerHTML = htmlIframe;
+        document.querySelector(".main_videos_modal").style.display = "flex";
+    }
+    //obtenemos videos de youtube
+    async function getVideosYoutube(){
+        const response = await fetch('https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCp6B4S_hKDBia-SLV2Lhvtg&maxResults=50&key=AIzaSyDDVmjtmuuvEwKp-KQr9vX87qsUK89SKUM');
+        const dataVideos = await response.json();
+        if(dataVideos.items?.length){
+            const videos = dataVideos.items;
+            let htmlVideos = ``;
+            for(let video of videos){
+                htmlVideos += `
+                <div class="video_item" onClick="executeModalVideoYoutube('${video.id?.videoId}')">
+                    <img src="${video.snippet?.thumbnails?.high?.url}" alt="">
+                    <div class="video_info">
+                        <div class="video_titulo">
+                            <h3>${video.snippet?.title}</h3>
+                            <span>${video.snippet?.description}</span>
+                        </div>
+                    </div>
+                </div>`;
+            }
+            const videosElement = document.querySelector(".main_videos_content");
+            videosElement.innerHTML += htmlVideos;
+        }   
+    }
+    getVideosYoutube();
+</script>
+<style>
+    .header_bombaestereo{position:initial; background:#774A89}
+    .footer_bombaestereo{margin-top:0}
+</style>
