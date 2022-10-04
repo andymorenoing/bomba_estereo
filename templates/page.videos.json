@@ -1,0 +1,11 @@
+{
+    "sections": {
+      "videosyoutube": {
+        "type": "videosyoutube"
+      }
+    },
+    "order": [
+      "videosyoutube"
+    ]
+  }
+  
