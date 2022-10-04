@@ -80,7 +80,7 @@
           "settings": {
             "heading_size": 21,
             "feed_width": 100,
-            "html_area": "instagram_feed"
+            "html_area": ".page-width{padding:0 10px}"
           }
         }
       },
