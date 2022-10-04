@@ -4190,10 +4190,10 @@ img{
   width: 100% !important;
 }
 .bombaestereo_content_product_vinil{
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
-.grid_products_bombaestereo.bombaestereo_content_product_vinil img{
-  height: 300px !important;
+.grid_products_bombaestereo.bombaestereo_content_product_vinil img, .bombaestereo_content_product_vinil .card__inner{
+  height: 25vw !important;
 }
 .card_buttones_vinil{
   display: flex;
