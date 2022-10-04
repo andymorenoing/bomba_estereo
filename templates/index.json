@@ -80,7 +80,7 @@
           "settings": {
             "heading_size": 21,
             "feed_width": 100,
-            "html_area": "<style>\n.page-width{padding:0 10px}\n<\/style>"
+            "html_area": "<style>\n.page-width{padding:0 10px;max-width:1600px}\n<\/style>"
           }
         }
       },
