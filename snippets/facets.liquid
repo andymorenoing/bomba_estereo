@@ -735,3 +735,11 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
+<script>
+  let spans = document.querySelectorAll('.facets__summary span');
+  for(let span of spans){
+    if(span.innerHTML == 'Más filtros'){
+      span.innerHTML = 'Colecciones'
+    }
+  }
+</script>
