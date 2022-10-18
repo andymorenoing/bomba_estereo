@@ -4289,6 +4289,9 @@ img{
 .section_products .section_products_title{
   margin-bottom: 0;
 }
+.product__accordion{
+  display: none !important;
+}
 @media only screen and (max-width: 768px) {
   .grid_products_bombaestereo.bombaestereo_content_product_vinil img, .grid_products_bombaestereo.bombaestereo_content_product_vinil .card__inner{
     height: 200px !important;
