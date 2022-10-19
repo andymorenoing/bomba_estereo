@@ -3576,6 +3576,8 @@ img{
 }
 .video-section{
   padding: 0  !important;
+  width: 100%;
+  max-width: 100% !important;
 }
 .section_banner_promo_info_title {
     font-family: 'athenian', sans-serif;
