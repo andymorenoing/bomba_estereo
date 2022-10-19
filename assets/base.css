@@ -3468,11 +3468,8 @@ img{
 }
 .main_content_1200{
     max-width: 1200px;
-    margin: auto;
+    margin: auto !important;
     padding: 0 10px;
-}
-.section_products{
-    margin-top: 60px;
 }
 .section_products_title, .section_help_title, .section_products_subtitle, .section_music_title{
     font-family: 'athenian';
@@ -3483,7 +3480,7 @@ img{
 .section_products_title{
   font-size: 20px;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 .grid_products_bombaestereo{
   margin-bottom: 100px;
@@ -3534,24 +3531,20 @@ img{
 
 .section_help_title{
   line-height: 1.5;
-  padding: 70px 50px 10px 50px;
+  padding: 0 50px;
   font-size: 20px;
   max-width: 870px;
   margin: auto;
+  margin-bottom: 30px;
+}
+.section_banner_promo_info_title{
+  padding-left: 0 !important;
 }
 .bombaestereo_content_product_vinil{
   margin-bottom: 50px !important;
 }
-.section_help{
-  margin-bottom: 150px;
-}
 .section_help_link, .section_products_link{
     text-align: center;
-    margin-top: 40px;
-}
-.section_products_link{
-  margin-top: 20px;
-  margin-bottom: 100px;
 }
 .section_help_link a, .section_products_link a{
     border: 2px solid #884993;
@@ -3566,25 +3559,23 @@ img{
     background: #884993;
     color: #fff;
 }
-.section_help_link{
-  margin-bottom: 100px;
-}
 .section_banner_promo{
   display: flex;
   align-items: center;
-  margin-top: 100px;
   background: #884993;
-  margin-bottom: 100px;
 }
 #insta-feed{
   max-width: 1200px;
-  margin-bottom: 50px !important;
+  margin: 0px auto 40px !important;
 }
 .section_banner_promo_info, .section_banner_promo_img{
     width: 50%;
 }
 .section_banner_promo_info{
     padding: 40px;
+}
+.video-section{
+  padding: 0  !important;
 }
 .section_banner_promo_info_title {
     font-family: 'athenian', sans-serif;
@@ -3607,16 +3598,10 @@ img{
     font-size: 20px;
     margin-top: 10px;
     color: #BA89BD;
-    margin-bottom: 30px;
-}
-.section_music_title{
-  margin-top: 100px;
-  margin-bottom: 50px;
 }
 .section_music_play{
-    display: flex;
-    align-items: center;
-    margin-bottom: 100px;
+  display: flex;
+  align-items: center;
 }
 .section_music_play_img, .section_music_play_reproductor{
     width: 50%;
@@ -3666,7 +3651,7 @@ img{
 .footer_title{
   font-family: 'helvetica-bold', sans-serif;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .info_menu_li a{
   font-family: 'helvetica-light', sans-serif;
@@ -3675,6 +3660,7 @@ img{
   margin-bottom: 10px;
   display: block;
   letter-spacing: 1px;
+  font-size: 15px;
 }
 .info_menu_ul{
   list-style: none;
@@ -3706,7 +3692,7 @@ img{
   transform: scale(1.1);
 }
 .footer_redes_li img{
-  width: 30px;
+  width: 25px;
 }
 .video-section{
   padding: 0;
@@ -3904,7 +3890,7 @@ img{
   background: #884993;
   border: #884993;
 }
-.main_producto_single .quantity{
+.quantity{
   min-height: 45px;
   width: 170px;
 }
@@ -4142,6 +4128,7 @@ img{
   color: #884993;
   font-size: 24px;
   margin-top: 20px;
+  font-size: 13px;
 }
 .main_about .per span{
   margin-top: 10px;
@@ -4292,6 +4279,43 @@ img{
 }
 .product__accordion{
   display: none !important;
+}
+.section_products .collection{
+  padding: 0;
+}
+.section_products .collection .card__information{
+  padding-bottom: 0;
+}
+.section_products_title, 
+.section_banner_promo_info_title,
+.section_products_title,
+.section_products_subtitle,
+.section_music_title,
+.play_reproductor_title,
+.main_producto_single .product__title h1,
+.product__info-wrapper .price .price__container .price-item,
+.main_about h3,
+.follow_yt span{
+  font-size: 25px !important;
+  margin-bottom: 25px !important;
+}
+.section_products, .section_banner_promo, .video-section{
+  margin: 50px 0;
+}
+.section_music{
+  margin-bottom: 50px;
+}
+.video-section{
+  margin-top: 60px;
+}
+.section_products_link{
+  margin-top: 30px !important;
+}
+.section_help_title_shop{
+  margin: 40px auto !important;
+}
+.cart-item .cart-item__name, .cart-item .product-option, .cart-item__price-wrapper .price, .tax-note{
+  font-size: 19px !important;
 }
 @media only screen and (max-width: 768px) {
   .grid_products_bombaestereo.bombaestereo_content_product_vinil img, .grid_products_bombaestereo.bombaestereo_content_product_vinil .card__inner{
