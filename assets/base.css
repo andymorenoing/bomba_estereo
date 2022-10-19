@@ -4433,4 +4433,7 @@ img{
   #ProductCount{
     display: none;
   }
+  .banner_info_title{
+    width: 100%;
+  }
 }
