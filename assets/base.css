@@ -4436,4 +4436,10 @@ img{
   .banner_info_title{
     width: 100%;
   }
+  .grid_products_bombaestereo img{
+    height: 180px !important;
+  }
+  .grid_products_bombaestereo .card__inner{
+    height: 180px;
+  }
 }
