@@ -4270,7 +4270,7 @@ img{
   color: #fff;
 }
 .grid__item{
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .grid_products_bombaestereo .price *{
   color: #7A7A7A;
@@ -4290,7 +4290,6 @@ img{
 }
 .section_products_title, 
 .section_banner_promo_info_title,
-.section_products_title,
 .section_products_subtitle,
 .section_music_title,
 .play_reproductor_title,
@@ -4299,10 +4298,10 @@ img{
 .main_about h3,
 .follow_yt span{
   font-size: 25px !important;
-  margin-bottom: 25px !important;
+  margin-bottom: 35px !important;
 }
 .section_products, .section_banner_promo, .video-section{
-  margin: 50px 0;
+  margin: 60px 0;
 }
 .section_music{
   margin-bottom: 50px;
